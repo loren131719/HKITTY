@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holy Kitty - The Chosen Kitty Whispering Heaven's Secrets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Georgia", serif;
+        line-height: 1.6;
+        color: #2c1810;
+        overflow-x: hidden;
+      }
+
+      /* Navigation */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 248, 220, 0.95));
+        backdrop-filter: blur(10px);
+        padding: 1rem 0;
+        z-index: 1000;
+              <h2 class="section-title trippy-text" data-text="Divine Purpose">Divine Purpose</h2> border-bottom: 2px solid rgba(218, 165, 32, 0.3);
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #8b4513;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a:hover {
+        color: #daa520;
+        transform: translateY(-2px);
+      }
+
+      .buy-btn {
+        background: linear-gradient(45deg, #daa520, #ffd700);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(218, 165, 32, 0.4);
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+      }
+
+      .buy-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(218, 165, 32, 0.6);
+      }
+
+      .x-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #8b4513;
+        transition: all 0.3s ease;
+        padding: 0.5rem;
+        border-radius: 50%;
+      }
+
+      .x-btn:hover {
+        color: #daa520;
+        transform: translateY(-2px);
+        background: rgba(218, 165, 32, 0.1);
+      }
+
+      /* Hero Section */
+      .hero {
+        min-height: 100vh;
+        padding-top: 150px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .hero-video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .video-gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg,
+          rgba(255, 228, 181, 0.85) 0%,
+          rgba(255, 234, 167, 0.85) 25%,
+          rgba(253, 203, 110, 0.85) 50%,
+          rgba(225, 112, 85, 0.85) 75%,
+          rgba(116, 185, 255, 0.85) 100%);
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .hero-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        opacity: 0.3;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 3;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .divine-title {
+        position: relative;
+        display: inline-block;
+        font-family: 'Cinzel', serif;
+        font-weight: 900;
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 
+          0 0 10px rgba(255, 215, 0, 0.8),
+          0 0 20px rgba(255, 215, 0, 0.6),
+          0 0 30px rgba(255, 215, 0, 0.4),
+          0 0 40px rgba(255, 215, 0, 0.2),
+          2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: divine-glow 3s ease-in-out infinite;
+        letter-spacing: 0.1em;
+        -webkit-text-stroke: 1px rgba(255, 215, 0, 0.3);
+      }
+
+      .divine-title::before {
+        content: "👼";
+        position: absolute;
+        top: -25px;
+        left: -40px;
+        font-size: 2.5rem;
+        animation: angel-blessing 4s ease-in-out infinite;
+        z-index: 1;
+        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
+      }
+
+      .divine-title::after {
+        content: "🕊️";
+        position: absolute;
+        top: -20px;
+        right: -35px;
+        font-size: 2.2rem;
+        animation: dove-peace 5s ease-in-out infinite reverse;
+        z-index: 1;
+        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
+      }
+
+      @keyframes text-flicker {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.95;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes hue-rotate {
+        0% {
+          filter: hue-rotate(0deg) saturate(150%);
+          color: #ff3366;
+        }
+        25% {
+          color: #ff33ff;
+        }
+        50% {
+          filter: hue-rotate(360deg) saturate(200%);
+          color: #33ffff;
+        }
+        75% {
+          color: #33ff66;
+        }
+        100% {
+          filter: hue-rotate(0deg) saturate(150%);
+          color: #ff3366;
+        }
+      }
+
+      @keyframes text-shadow-pulse {
+        0% {
+          text-shadow: 0 0 10px rgba(255,51,102,0.8),
+                     0 0 20px rgba(255,51,102,0.8),
+                     0 0 30px rgba(255,51,102,0.8),
+                     0 0 40px rgba(255,215,0,0.6);
+        }
+        50% {
+          text-shadow: 0 0 20px rgba(51,255,255,0.8),
+                     0 0 40px rgba(51,255,255,0.8),
+                     0 0 60px rgba(51,255,255,0.8),
+                     0 0 80px rgba(255,215,0,0.8);
+        }
+        100% {
+          text-shadow: 0 0 10px rgba(255,51,102,0.8),
+                     0 0 20px rgba(255,51,102,0.8),
+                     0 0 30px rgba(255,51,102,0.8),
+                     0 0 40px rgba(255,215,0,0.6);
+        }
+      }
+
+      @keyframes divine-glow {
+        0%, 100% {
+          text-shadow: 
+            0 0 10px rgba(255, 215, 0, 0.8),
+            0 0 20px rgba(255, 215, 0, 0.6),
+            0 0 30px rgba(255, 215, 0, 0.4),
+            0 0 40px rgba(255, 215, 0, 0.2),
+            2px 2px 4px rgba(0, 0, 0, 0.5);
+          transform: scale(1);
+        }
+        50% {
+          text-shadow: 
+            0 0 20px rgba(255, 215, 0, 1),
+            0 0 40px rgba(255, 215, 0, 0.8),
+            0 0 60px rgba(255, 215, 0, 0.6),
+            0 0 80px rgba(255, 215, 0, 0.4),
+            2px 2px 4px rgba(0, 0, 0, 0.5);
+          transform: scale(1.05);
+        }
+      }
+
+      @keyframes angel-blessing {
+        0%, 100% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0.9;
+        }
+        25% {
+          transform: translateY(-20px) rotate(8deg);
+          opacity: 1;
+        }
+        50% {
+          transform: translateY(-35px) rotate(0deg);
+          opacity: 0.95;
+        }
+        75% {
+          transform: translateY(-15px) rotate(-8deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes dove-peace {
+        0%, 100% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0.8;
+        }
+        33% {
+          transform: translateY(-25px) rotate(12deg);
+          opacity: 1;
+        }
+        66% {
+          transform: translateY(-20px) rotate(-6deg);
+          opacity: 0.9;
+        }
+      }
+
+      .hero-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 4;
+      }
+
+      .hero-floating-image {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        opacity: 0.8;
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+      }
+
+      .hero-floating-image.image-1 {
+        top: 20%;
+        left: 10%;
+        animation: float-image-1 20s ease-in-out infinite;
+      }
+
+      .hero-floating-image.image-2 {
+        top: 40%;
+        right: 10%;
+        animation: float-image-2 25s ease-in-out infinite;
+      }
+
+      @keyframes float-image-1 {
+        0%, 100% {
+          transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: translateY(-100px) translateX(50px) rotate(5deg) scale(1.1);
+          opacity: 0.9;
+        }
+      }
+
+      @keyframes float-image-2 {
+        0%, 100% {
+          transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: translateY(100px) translateX(-50px) rotate(-5deg) scale(1.1);
+          opacity: 0.9;
+        }
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><filter id="cloud"><feTurbulence baseFrequency="0.02" numOctaves="3"/><feColorMatrix values="1 1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 0.7 0"/></filter></defs><rect width="100%" height="100%" fill="none"/><ellipse cx="200" cy="400" rx="150" ry="60" fill="rgba(255,255,255,0.8)" filter="url(%23cloud)"/><ellipse cx="600" cy="350" rx="200" ry="80" fill="rgba(255,255,255,0.6)" filter="url(%23cloud)"/><ellipse cx="1000" cy="450" rx="180" ry="70" fill="rgba(255,255,255,0.7)" filter="url(%23cloud)"/></svg>')
+          center/cover;
+        opacity: 0.6;
+        animation: clouds 20s ease-in-out infinite;
+      }
+
+      @keyframes clouds {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(50px);
+        }
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        padding: 2rem;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        color: white;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        to {
+          text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.8);
+        }
+      }
+
+      .hero .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #fff8dc;
+        font-style: italic;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .contract-address {
+        margin-bottom: 2rem;
+        background: rgba(44, 24, 16, 0.4);
+        padding: 1.5rem;
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 215, 0, 0.2);
+        max-width: 800px;
+        margin: 0 auto 2rem;
+      }
+
+      .address-label {
+        color: #ffd700;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
+      .address-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+
+      .address {
+        font-family: monospace;
+        color: #fff;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+      }
+
+      .copy-btn {
+        background: rgba(255, 215, 0, 0.2);
+        border: 1px solid rgba(255, 215, 0, 0.5);
+        color: #ffd700;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+        min-width: 100px;
+        justify-content: center;
+      }
+
+      .copy-btn:hover {
+        background: rgba(255, 215, 0, 0.3);
+        transform: translateY(-2px);
+      }
+
+      .copy-btn.copied {
+        background: rgba(0, 255, 0, 0.2);
+        border-color: rgba(0, 255, 0, 0.5);
+        color: #90EE90;
+      }
+
+      .copy-icon {
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: 768px) {
+        .address-container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .address {
+          word-break: break-all;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .hero-cat {
+        font-size: 8rem;
+        margin: 2rem 0;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      /* About Section */
+      .about {
+        padding: 6rem 2rem;
+        background: linear-gradient(45deg, #fff8dc, #fffacd);
+        position: relative;
+      }
+
+      .about-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        padding: 2rem;
+      }
+
+      .about-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .about-content {
+        flex: 1;
+        text-align: left;
+      }
+
+      @media (max-width: 768px) {
+        .about-container {
+          flex-direction: column;
+        }
+      }
+
+      .about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(218,165,32,0.1)"/><circle cx="20" cy="30" r="1" fill="rgba(218,165,32,0.1)"/><circle cx="80" cy="70" r="1.5" fill="rgba(218,165,32,0.1)"/></svg>')
+          repeat;
+        opacity: 0.3;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        color: #8b4513;
+        position: relative;
+      }
+
+      .section-title::after {
+        content: "✨";
+        position: absolute;
+        top: -10px;
+        right: -30px;
+        font-size: 2rem;
+        animation: sparkle 2s ease-in-out infinite;
+      }
+
+      @keyframes sparkle {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.5;
+          transform: scale(1.2);
+        }
+      }
+
+      .about-content {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 2;
+        color: #5d4037;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Mission Section */
+      .mission {
+        padding: 6rem 2rem;
+        background: linear-gradient(135deg, #87ceeb 0%, #ffe4b5 50%, #ffeaa7 100%);
+        position: relative;
+      }
+
+      .mission::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><ellipse cx="300" cy="500" rx="200" ry="80" fill="rgba(255,255,255,0.4)"/><ellipse cx="700" cy="100" rx="150" ry="60" fill="rgba(255,255,255,0.3)"/><ellipse cx="1100" cy="400" rx="180" ry="70" fill="rgba(255,255,255,0.5)"/></svg>')
+          center/cover;
+        animation: clouds 25s ease-in-out infinite reverse;
+      }
+
+      .mission-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        margin-top: 3rem;
+      }
+
+      .mission-card {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 2rem;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        border: 2px solid rgba(218, 165, 32, 0.2);
+      }
+
+      .mission-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .mission-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #8b4513;
+      }
+
+      .mission-card .icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      /* Ten Commandments Section */
+      .commandments {
+        padding: 6rem 2rem;
+        background: linear-gradient(135deg, #2c1810 0%, #4a2c2a 25%, #8b4513 50%, #daa520 75%, #ffd700 100%);
+        position: relative;
+        color: white;
+      }
+
+      .commandments::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><text x="10" y="15" font-family="serif" font-size="8" fill="rgba(255,215,0,0.1)">✨</text><text x="50" y="10" font-family="serif" font-size="6" fill="rgba(255,215,0,0.1)">👼</text><text x="80" y="18" font-family="serif" font-size="7" fill="rgba(255,215,0,0.1)">🕊️</text></svg>')
+          repeat;
+        opacity: 0.3;
+      }
+
+      .commandments .section-title {
+        color: #ffd700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .commandments-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin-top: 3rem;
+      }
+
+      .commandment-tablet {
+        background: linear-gradient(145deg, rgba(139, 69, 19, 0.9), rgba(160, 82, 45, 0.9));
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        border: 3px solid #daa520;
+        position: relative;
+        backdrop-filter: blur(10px);
+      }
+
+      .tablet-header {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffd700;
+        margin-bottom: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .commandments-list {
+        space-y: 1rem;
+      }
+
+      .commandment {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        border-left: 4px solid #ffd700;
+        transition: all 0.3s ease;
+      }
+
+      .commandment:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateX(10px);
+      }
+
+      .commandment .number {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffd700;
+        margin-right: 1.5rem;
+        min-width: 50px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        flex-shrink: 0;
+      }
+
+      .commandment .text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #fff8dc;
+        font-style: italic;
+      }
+
+      .divine-signature {
+        text-align: center;
+        margin-top: 4rem;
+        padding: 2rem;
+        background: rgba(255, 215, 0, 0.1);
+        border-radius: 15px;
+        border: 2px dashed #ffd700;
+      }
+
+      .divine-signature p {
+        font-size: 1.3rem;
+        color: #ffd700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      }
+      .community {
+        padding: 6rem 2rem;
+        background: linear-gradient(45deg, #e8f5e8, #f0f8ff);
+        position: relative;
+      }
+
+      .chat-container {
+        max-width: 800px;
+        margin: 3rem auto 0;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border: 3px solid #daa520;
+      }
+
+      .chat-header {
+        background: linear-gradient(45deg, #daa520, #ffd700);
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .chat-messages {
+        height: 300px;
+        overflow-y: auto;
+        padding: 1rem;
+        background: #fafafa;
+      }
+
+      .chat-input-container {
+        display: flex;
+        padding: 1rem;
+        background: white;
+        border-top: 1px solid #eee;
+      }
+
+      .chat-input {
+        flex: 1;
+        padding: 1rem;
+        border: 2px solid #daa520;
+        border-radius: 25px;
+        margin-right: 1rem;
+        font-size: 1rem;
+      }
+
+      .send-btn {
+        background: linear-gradient(45deg, #daa520, #ffd700);
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .send-btn:hover {
+        transform: scale(1.05);
+      }
+
+      .message {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 15px;
+        max-width: 80%;
+        animation: fadeIn 0.3s ease-in;
+      }
+
+      .message.user {
+        background: #daa520;
+        color: white;
+        margin-left: auto;
+      }
+
+      .message.other {
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        margin-right: auto;
+        border: 1px solid rgba(218, 165, 32, 0.3);
+      }
+
+      .message-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .message-time {
+        opacity: 0.7;
+        font-size: 0.8rem;
+      }
+
+      .message-content {
+        word-break: break-word;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .chat-status {
+        text-align: center;
+        padding: 0.5rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+        border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+        margin-bottom: 1rem;
+      }
+
+      .chat-error {
+        text-align: center;
+        padding: 1rem;
+        background: rgba(255, 0, 0, 0.1);
+        border: 1px solid rgba(255, 0, 0, 0.3);
+        color: #ff6b6b;
+        border-radius: 10px;
+        margin: 1rem 0;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero-cat {
+          font-size: 5rem;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .commandments-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .commandment-tablet {
+          min-width: auto;
+        }
+      }
+
+      /* Floating elements and animations */
+      .floating-elements {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        overflow: hidden;
+      }
+
+      .floating-heaven {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        opacity: 0.8;
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+        animation: float-heaven 15s ease-in-out infinite;
+      }
+
+      @keyframes float-heaven {
+        0%, 100% {
+          transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+          opacity: 0.8;
+        }
+        25% {
+          transform: translateY(-50px) translateX(30px) rotate(5deg) scale(1.1);
+          opacity: 0.9;
+        }
+        50% {
+          transform: translateY(-100px) translateX(-30px) rotate(-5deg) scale(1);
+          opacity: 0.7;
+        }
+        75% {
+          transform: translateY(-50px) translateX(10px) rotate(3deg) scale(0.95);
+          opacity: 0.8;
+        }
+      }
+
+      .divine-image {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 2rem auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        animation: divine-glow 3s ease-in-out infinite;
+      }
+
+      @keyframes divine-glow {
+        0%, 100% {
+          box-shadow: 0 10px 30px rgba(218, 165, 32, 0.3);
+          transform: translateY(0);
+        }
+        50% {
+          box-shadow: 0 20px 50px rgba(218, 165, 32, 0.5);
+          transform: translateY(-10px);
+        }
+      }
+
+      .text-glow {
+        animation: text-shine 3s ease-in-out infinite;
+      }
+
+      @keyframes text-shine {
+        0%, 100% {
+          text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        50% {
+          text-shadow: 0 0 30px rgba(255, 215, 0, 0.8), 0 0 50px rgba(255, 215, 0, 0.3);
+        }
+      }
+
+      @keyframes psychedelic {
+        0% {
+          filter: hue-rotate(0deg) saturate(100%);
+          transform: scale(1) skew(0deg);
+        }
+        25% {
+          filter: hue-rotate(90deg) saturate(200%);
+          transform: scale(1.02) skew(2deg);
+        }
+        50% {
+          filter: hue-rotate(180deg) saturate(300%);
+          transform: scale(1) skew(0deg);
+        }
+        75% {
+          filter: hue-rotate(270deg) saturate(200%);
+          transform: scale(0.98) skew(-2deg);
+        }
+        100% {
+          filter: hue-rotate(360deg) saturate(100%);
+          transform: scale(1) skew(0deg);
+        }
+      }
+
+      .psychedelic-text {
+        animation: psychedelic 8s infinite linear;
+        display: inline-block;
+      }
+
+      .rainbow-text {
+        background: linear-gradient(
+          to right,
+          #ff0000,
+          #ff8000,
+          #ffff00,
+          #00ff00,
+          #00ffff,
+          #0000ff,
+          #8000ff,
+          #ff0080
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow-move 8s linear infinite;
+        background-size: 200% auto;
+      }
+
+      @keyframes rainbow-move {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 200% 50%;
+        }
+      }
+
+      .wobble-text {
+        animation: wobble 2s ease-in-out infinite;
+        display: inline-block;
+      }
+
+      @keyframes wobble {
+        0%, 100% {
+          transform: translateX(0) translateY(0) rotate(0);
+        }
+        25% {
+          transform: translateX(-5px) translateY(-5px) rotate(-5deg);
+        }
+        50% {
+          transform: translateX(5px) translateY(-5px) rotate(5deg);
+        }
+        75% {
+          transform: translateX(-5px) translateY(5px) rotate(-3deg);
+        }
+      }
+
+      .trippy-text {
+        animation: trippy 2s linear infinite;
+        position: relative;
+        display: inline-block;
+      }
+
+      @keyframes trippy {
+        0% {
+          filter: hue-rotate(0deg) blur(0px);
+          transform: scale(1) translate(0, 0) skew(0deg);
+          text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ff00, 1px -1px 0 #0000ff;
+        }
+        25% {
+          filter: hue-rotate(90deg) blur(1px);
+          transform: scale(1.05) translate(2px, -2px) skew(5deg);
+          text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff, -1px 1px 0 #ffff00;
+        }
+        50% {
+          filter: hue-rotate(180deg) blur(0px);
+          transform: scale(0.95) translate(-2px, 2px) skew(-5deg);
+          text-shadow: 2px -2px 0 #00ff00, -2px 2px 0 #0000ff, 1px 1px 0 #ff0000;
+        }
+        75% {
+          filter: hue-rotate(270deg) blur(1px);
+          transform: scale(1.05) translate(-2px, -2px) skew(5deg);
+          text-shadow: -2px -2px 0 #00ffff, 2px 2px 0 #ffff00, -1px -1px 0 #ff00ff;
+        }
+        100% {
+          filter: hue-rotate(360deg) blur(0px);
+          transform: scale(1) translate(0, 0) skew(0deg);
+          text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ff00, 1px -1px 0 #0000ff;
+        }
+      }
+
+      .glitch-text {
+        position: relative;
+        animation: glitch 0.5s infinite;
+      }
+
+      .glitch-text::before,
+      .glitch-text::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .glitch-text::before {
+        animation: glitch-top 0.3s infinite linear;
+        clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+      }
+
+      .glitch-text::after {
+        animation: glitch-bottom 0.3s infinite linear;
+        clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+      }
+
+      .drug-text {
+        animation: drug-colors 0.5s linear infinite;
+        position: relative;
+        display: inline-block;
+      }
+
+      @keyframes drug-colors {
+        0% { color: #ff0000; text-shadow: 0 0 10px #ff0000; }
+        10% { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }
+        20% { color: #0000ff; text-shadow: 0 0 10px #0000ff; }
+        30% { color: #00ffff; text-shadow: 0 0 10px #00ffff; }
+        40% { color: #00ff00; text-shadow: 0 0 10px #00ff00; }
+        50% { color: #ffff00; text-shadow: 0 0 10px #ffff00; }
+        60% { color: #ff8800; text-shadow: 0 0 10px #ff8800; }
+        70% { color: #ff0088; text-shadow: 0 0 10px #ff0088; }
+        80% { color: #8800ff; text-shadow: 0 0 10px #8800ff; }
+        90% { color: #0088ff; text-shadow: 0 0 10px #0088ff; }
+        100% { color: #ff0000; text-shadow: 0 0 10px #ff0000; }
+      }
+
+      .drug-text {
+        animation: drug-colors 2s linear infinite;
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+        filter: brightness(1.2);
+      }
+
+      .float-subtle {
+        animation: float-subtle 3s ease-in-out infinite;
+        display: block;
+        margin: 0 auto;
+        font-size: 3rem;
+        color: #8b4513;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      @keyframes float-subtle {
+        0%, 100% {
+          transform: translateY(0);
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        50% {
+          transform: translateY(-10px);
+          text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      .gentle-float {
+        animation: gentle-float 4s ease-in-out infinite;
+        text-align: center;
+        width: 100%;
+        display: block;
+      }
+
+      @keyframes gentle-float {
+        0%, 100% {
+          transform: translateY(0);
+          text-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        50% {
+          transform: translateY(-5px);
+          text-shadow: 0 15px 25px rgba(0,0,0,0.3);
+        }
+      }
+
+      /* Footer Styles */
+      .footer {
+        background: linear-gradient(135deg, #2c1810 0%, #4a2c2a 100%);
+        color: #fff8dc;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+      }
+
+      .footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #ffd700, transparent);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="https://iili.io/FyDmnHP.md.png" alt="Holy Kitty Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#commandments">Commandments</a></li>
+          <li><a href="#community">Community</a></li>
+          <li>
+            <a href="https://x.com/hkitty_sol" target="_blank" class="x-btn">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </li>
+          <li><a href="https://heaven.xyz/token/" target="_blank" class="buy-btn">Buy $HKITTY</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-video-container">
+        <div class="video-gradient-overlay"></div>
+        <div style="position: absolute; width: 100%; height: 100%; opacity: 1; z-index: 1">
+          <div style="padding: 56.25% 0 0 0; position: relative">
+            <iframe
+              src="https://player.vimeo.com/video/1111859981?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;background=1&amp;loop=1&amp;muted=1#t=1s"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+              title="Holy Kitty Background"
+            ></iframe>
+          </div>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+      <div class="hero-content">
+        <h1 class="divine-title">Holy Kitty</h1>
+        <p class="subtitle rainbow-text">The chosen kitty whispering Heaven's secrets</p>
+        <div class="contract-address">
+          <p class="address-label">CONTRACT ADDRESS:</p>
+          <div class="address-container">
+            <code class="address">0x0000000000000000000000000000000000000000</code>
+            <button onclick="copyAddress()" class="copy-btn" id="copyBtn">
+              <span class="copy-icon">📋</span>
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+        </div>
+        <a href="https://heaven.xyz/" target="_blank" class="buy-btn wobble-text" style="font-size: 1.2rem; padding: 1rem 2rem">Ascend with $HKITTY</a>
+      </div>
+      <div class="hero-images">
+        <img src="https://iili.io/FyDmqlV.md.png" alt="Floating Heaven 1" class="hero-floating-image image-1" />
+        <img src="https://iili.io/FyDmfKQ.md.png" alt="Floating Heaven 2" class="hero-floating-image image-2" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2 class="section-title text-glow">Divine Purpose</h2>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="https://iili.io/FyDmfKQ.md.png" alt="Divine Purpose" class="divine-image" />
+        </div>
+        <div class="about-content">
+          <p>
+            In the celestial realms above, where golden light dances through eternal clouds, a special feline was chosen to bridge the gap between Heaven and Earth. Holy Kitty carries divine whispers, spreading love, wisdom, and celestial blessings
+            to all who believe.
+          </p>
+          <br />
+          <p>
+            Born from stardust and blessed with heavenly grace, Holy Kitty embodies purity, compassion, and the eternal bond between the divine and mortal worlds. Each purr resonates with ancient wisdom, each gentle paw step leaves traces of sacred
+            light.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+      <div class="container">
+        <h2 class="section-title float-subtle" style="text-align: center; width: 100%">Sacred Mission</h2>
+        <div class="mission-grid">
+          <div class="mission-card">
+            <div class="icon">🙏</div>
+            <h3>Spread Divine Love</h3>
+            <p>Bringing heavenly compassion and unconditional love to every soul, creating a community blessed with kindness and understanding.</p>
+          </div>
+          <div class="mission-card">
+            <div class="icon">✨</div>
+            <h3>Share Celestial Wisdom</h3>
+            <p>Channeling ancient knowledge from the heavens above, guiding believers toward enlightenment and spiritual growth.</p>
+          </div>
+          <div class="mission-card">
+            <div class="icon">🌟</div>
+            <h3>Unite Sacred Souls</h3>
+            <p>Building a divine community where believers gather to share blessings, support one another, and celebrate heavenly grace.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ten Commandments Section -->
+    <section id="commandments" class="commandments">
+      <div class="container">
+        <h2 class="section-title gentle-float">The Ten Sacred Commandments</h2>
+        <p style="text-align: center; font-size: 1.2rem; color: #e8e8e8; margin-bottom: 3rem; font-style: italic">As whispered by Holy Kitty from the heavenly litter box above 📜✨</p>
+
+        <div class="commandments-grid">
+          <div class="commandment-tablet">
+            <div class="tablet-header">📜 Sacred Tablet I 📜</div>
+            <div class="commandments-list">
+              <div class="commandment">
+                <span class="number">I.</span>
+                <span class="text">Thou shalt always land on thy paws, for gravity is but a suggestion to the chosen.</span>
+              </div>
+              <div class="commandment">
+                <span class="number">II.</span>
+                <span class="text">Honor thy treat dispenser and thy chin scratcher, that thy days may be long and full of tuna.</span>
+              </div>
+              <div class="commandment">
+                <span class="number">III.</span>
+                <span class="text">Thou shalt not covet thy neighbor's cardboard box, for all boxes are sacred vessels.</span>
+              </div>
+              <div class="commandment">
+                <span class="number">IV.</span>
+                <span class="text">Remember the nap time, to keep it holy. Six days shalt thou play, but the seventh is for sleeping.</span>
+              </div>
+              <div class="commandment">
+                <span class="number">V.</span>
+                <span class="text">Thou shalt knock things off tables, for this is the way of testing earthly attachments.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="commandment-tablet">
+            <div class="tablet-header">📜 Sacred Tablet II 📜</div>
+            <div class="commandments-list">
+              <div class="commandment">
+                <span class="number">VI.</span>
+                <span class="text">Thou shalt purr with the frequency of divine love, healing all who hear thy sacred vibrations.</span>
+              </div>
+              <div class="commandment">
+                <span class="number">VII.</span>
+                <span class="text">Thou shalt stare into the void until the void stares back, for this is true meditation.</span>
+              </div>
+              <div class="commandment">
+                <span class="number">VIII.</span>
+                <span class="text">Thou shalt ignore thy human when called, but appear instantly when treats crinkle.</span>
+              </div>
+              <div class="commandment">
+                <span class="number">IX.</span>
+                <span class="text">Thou shalt claim the warmest spot in any dwelling, for comfort is a divine right.</span>
+              </div>
+              <div class="commandment">
+                <span class="number">X.</span>
+                <span class="text">Above all, thou shalt judge silently but love unconditionally, as befits a heavenly feline.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divine-signature">
+          <p>✨ Blessed be those who follow the Sacred Paw Prints ✨</p>
+          <p style="font-style: italic; margin-top: 1rem">- Holy Kitty, Whisperer of Heaven's Secrets 😇🐱</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Chat Section -->
+    <section id="community" class="community">
+      <div class="container">
+        <h2 class="section-title">Heavenly Community</h2>
+        <p style="text-align: center; font-size: 1.2rem; color: #5d4037; margin-bottom: 2rem">Join fellow believers in sacred communion. Share your thoughts, ask for blessings, and connect with the divine community.</p>
+
+        <div class="chat-container">
+          <div class="chat-header">🕊️ Divine Messages - Blessed Community Chat 🕊️</div>
+          <div class="chat-messages" id="chatMessages">
+            <div class="message bot">🌟 <strong>Holy Kitty:</strong> Welcome, blessed soul! Share your thoughts and let Heaven's love flow through our sacred community. ✨</div>
+            <div class="message bot">😇 <strong>Angel Guardian:</strong> May divine light guide your words and bring peace to all who gather here. 🙏</div>
+          </div>
+          <div class="chat-input-container">
+            <input type="text" id="usernameInput" class="chat-input" placeholder="Your blessed name..." maxlength="50" style="width: 200px; margin-right: 10px" />
+            <input type="text" id="chatInput" class="chat-input" placeholder="Share your divine thoughts..." maxlength="200" />
+            <button onclick="sendMessage()" class="send-btn">Send 🕊️</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 Holy Kitty. All rights eternally blessed.</p>
+    </footer>
+
+    <script>
+      // Contract Address Copy functionality
+      function copyAddress() {
+        const address = "0x0000000000000000000000000000000000000000"; // Replace this with actual address after launch
+        navigator.clipboard.writeText(address).then(() => {
+          const copyBtn = document.getElementById("copyBtn");
+          copyBtn.classList.add("copied");
+          copyBtn.querySelector(".copy-text").textContent = "Copied!";
+          copyBtn.querySelector(".copy-icon").textContent = "✅";
+
+          setTimeout(() => {
+            copyBtn.classList.remove("copied");
+            copyBtn.querySelector(".copy-text").textContent = "Copy";
+            copyBtn.querySelector(".copy-icon").textContent = "📋";
+          }, 2000);
+        });
+      }
+
+      // Local Storage Chat functionality
+      const chatMessages = document.getElementById("chatMessages");
+      const chatInput = document.getElementById("chatInput");
+      const usernameInput = document.getElementById("usernameInput");
+
+      // Initialize with default messages
+      const defaultMessages = [
+        {
+          id: '1',
+          username: 'Holy Kitty',
+          text: 'Welcome, blessed soul! Share your thoughts and let Heaven\'s love flow through our sacred community. ✨',
+          timestamp: Date.now() - 60000,
+          isCurrentUser: false
+        },
+        {
+          id: '2',
+          username: 'Angel Guardian',
+          text: 'May divine light guide your words and bring peace to all who gather here. 🙏',
+          timestamp: Date.now() - 30000,
+          isCurrentUser: false
+        }
+      ];
+
+      // Load messages from localStorage or use defaults
+      function loadMessages() {
+        const stored = localStorage.getItem('holykitty-messages');
+        return stored ? JSON.parse(stored) : defaultMessages;
+      }
+
+      // Save messages to localStorage
+      function saveMessages(messages) {
+        localStorage.setItem('holykitty-messages', JSON.stringify(messages));
+      }
+
+      // Display a message
+      function displayMessage(message) {
+        const messageDiv = document.createElement("div");
+        messageDiv.className = "message " + (message.isCurrentUser ? "user" : "other");
+        messageDiv.innerHTML = `
+          <div class="message-header">
+            <strong>${message.username}</strong>
+            <span class="message-time">${new Date(message.timestamp).toLocaleTimeString()}</span>
+          </div>
+          <div class="message-content">${message.text}</div>
+        `;
+        chatMessages.appendChild(messageDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      // Load and display all messages
+      function displayAllMessages() {
+        chatMessages.innerHTML = '';
+        const messages = loadMessages();
+        messages.forEach(displayMessage);
+      }
+
+      // Send a new message
+      function sendMessage() {
+        const message = chatInput.value.trim();
+        const username = usernameInput.value.trim() || "Anonymous Angel";
+        if (message === "") return;
+
+        const newMessage = {
+          id: Date.now().toString(),
+          username: username,
+          text: message,
+          timestamp: Date.now(),
+          isCurrentUser: true,
+        };
+
+        // Add to local storage
+        const messages = loadMessages();
+        messages.push(newMessage);
+        
+        // Keep only last 50 messages
+        if (messages.length > 50) {
+          messages.splice(0, messages.length - 50);
+        }
+        
+        saveMessages(messages);
+        
+        // Display the new message
+        displayMessage(newMessage);
+
+        // Clear input
+        chatInput.value = "";
+      }
+
+      // Initialize chat on page load
+      window.addEventListener('load', () => {
+        displayAllMessages();
+      });
+
+      // Allow Enter key to send message
+      chatInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          sendMessage();
+        }
+      });
+
+      // Smooth scrolling for navigation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Add some sparkle effects on scroll
+      window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        const parallax = document.querySelector(".floating-elements");
+        const speed = scrolled * 0.5;
+        parallax.style.transform = `translateY(${speed}px)`;
+      });
+    </script>
+  </body>
+</html>
